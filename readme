@@ -43,26 +43,26 @@ Supports user authentication, role-based authorization, and full CRUD for blog p
 
 ## Tech Stack
 
-- **Node.js**
-- **Express.js**
-- **MongoDB + Mongoose**
-- **JWT (jsonwebtoken)**
-- **bcrypt**
-- **Joi (input validation)**
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT (jsonwebtoken)
+- bcrypt
+- Joi
 
 ---
 
 ## Folder Structure
 
 src/
-├── controllers/ # Route handlers (user, post)
-├── models/ # Mongoose schemas (User, Post)
-├── routes/ # Express routers
-├── middlewares/ # JWT, validation, roles
-├── validation/ # Joi schemas
-├── config/ # DB connection
-├── app.js # Express app setup
-└── server.js # App entry point
+├── controllers/   # Route handlers (user, post)
+├── models/        # Mongoose schemas (User, Post)
+├── routes/        # Express routers
+├── middlewares/   # JWT, validation, roles
+├── validation/    # Joi schemas
+├── config/        # DB connection
+├── app.js         # Express app setup
+└── server.js      # App entry point
 
 ---
 
