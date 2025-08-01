@@ -1,0 +1,66 @@
+# 📝 Blog API - Express + MongoDB
+
+A simple and clean **Node.js RESTful API** for a blogging platform, built with Express and MongoDB.  
+Supports user authentication, role-based authorization, and full CRUD for blog posts.
+
+---
+
+## 🚀 Features
+
+- ✅ User Registration and Login with JWT
+- ✅ Password hashing using bcrypt
+- ✅ Role-based Access Control (`admin`, `reader`)
+- ✅ Create / Read / Update / Delete posts
+- ✅ Input validation using Joi
+- ✅ Search posts by title (case-insensitive)
+- ✅ Populate author data in posts
+- ✅ Clear error handling and messages
+- ✅ Modular and maintainable code structure
+
+---
+
+## 🧪 API Endpoints
+
+### 👤 Auth
+
+| Method | Endpoint              | Access | Description         |
+| ------ | --------------------- | ------ | ------------------- |
+| POST   | `/api/users/register` | Public | Register new user   |
+| POST   | `/api/users/login`    | Public | Login and get token |
+
+---
+
+### 📝 Posts
+
+| Method | Endpoint         | Access     | Description                                    |
+| ------ | ---------------- | ---------- | ---------------------------------------------- |
+| GET    | `/api/posts`     | Public     | Get all posts (with optional `?search=` query) |
+| GET    | `/api/posts/:id` | Public     | Get single post by ID                          |
+| POST   | `/api/posts`     | Admin only | Create new post                                |
+| PUT    | `/api/posts/:id` | Admin only | Update existing post                           |
+| DELETE | `/api/posts/:id` | Admin only | Delete a post                                  |
+
+---
+
+## 🧰 Tech Stack
+
+- **Node.js**
+- **Express.js**
+- **MongoDB + Mongoose**
+- **JWT (jsonwebtoken)**
+- **bcrypt**
+- **Joi (input validation)**
+
+---
+
+## 🗂 Folder Structure
+
+src/
+├── controllers/ # Route handlers (user, post)
+├── models/ # Mongoose schemas (User, Post)
+├── routes/ # Express routers
+├── middlewares/ # JWT, validation, roles
+├── validation/ # Joi schemas
+├── config/ # DB connection
+├── app.js # Express app setup
+└── server.js # App entry point
