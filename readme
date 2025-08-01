@@ -1,27 +1,26 @@
-# 📝 Blog API - Express + MongoDB
+# Blog API - Express + MongoDB
 
 A simple and clean **Node.js RESTful API** for a blogging platform, built with Express and MongoDB.  
 Supports user authentication, role-based authorization, and full CRUD for blog posts.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ User Registration and Login with JWT
-- ✅ Password hashing using bcrypt
-- ✅ Role-based Access Control (`admin`, `reader`)
-- ✅ Create / Read / Update / Delete posts
-- ✅ Input validation using Joi
-- ✅ Search posts by title (case-insensitive)
-- ✅ Populate author data in posts
-- ✅ Clear error handling and messages
-- ✅ Modular and maintainable code structure
+- User Registration and Login with JWT
+- Password hashing using bcrypt
+- Role-based Access Control (`admin`, `reader`)
+- Create / Read / Update / Delete posts
+- Input validation using Joi
+- Search posts by title (case-insensitive)
+- Clear error handling and messages
+- Modular and maintainable code structure
 
 ---
 
-## 🧪 API Endpoints
+## API Endpoints
 
-### 👤 Auth
+### Auth
 
 | Method | Endpoint              | Access | Description         |
 | ------ | --------------------- | ------ | ------------------- |
@@ -30,7 +29,7 @@ Supports user authentication, role-based authorization, and full CRUD for blog p
 
 ---
 
-### 📝 Posts
+### Posts
 
 | Method | Endpoint         | Access     | Description                                    |
 | ------ | ---------------- | ---------- | ---------------------------------------------- |
@@ -42,7 +41,7 @@ Supports user authentication, role-based authorization, and full CRUD for blog p
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Node.js**
 - **Express.js**
@@ -53,7 +52,7 @@ Supports user authentication, role-based authorization, and full CRUD for blog p
 
 ---
 
-## 🗂 Folder Structure
+## Folder Structure
 
 src/
 ├── controllers/ # Route handlers (user, post)
@@ -64,3 +63,11 @@ src/
 ├── config/ # DB connection
 ├── app.js # Express app setup
 └── server.js # App entry point
+
+---
+
+## Start
+
+npm install
+npm run dev
+
